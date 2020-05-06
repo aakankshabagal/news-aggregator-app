@@ -108,7 +108,11 @@ body section .newslist #news-articles .container .article .article-link .article
   color: #c7c1c1;
 }
 
-body section .newslist #news-articles .container .article .article-link .article-author {
+body section .newslist #news-articles .container .article .article-link p {
+  text-align: right;
+}
+
+body section .newslist #news-articles .container .article .article-link p .article-author {
   color: blue;
   width: 100%;
   text-align: right;

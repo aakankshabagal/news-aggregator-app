@@ -70,7 +70,7 @@ function getNews(news)
 
     <p class="article-description">${ind.description || "Description not available."}</p>
 
-    <span class="article-author">-${ind.author?ind.author:"unknown"}</span><br>
+    <span class="article-author">${ind.author?ind.author:"unknown"}</span><br>
     </a>
     </li>
     </section>`;
