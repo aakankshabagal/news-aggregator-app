@@ -59,8 +59,8 @@ function getNews(news)
         
    
      output+=
-    `<section class="container rubberBand" >
-    <li class="article animated pulse delay-2s"><a class="article-link" href="${ind.url}">
+    `<section class="container  animated pulse delay-2s" >
+    <li class="article"><a class="article-link" href="${ind.url}">
 
     <div class="img">
     <img src="${ind.urlToImage}" class="article-img" alt="${ind.title}" />
@@ -68,7 +68,7 @@ function getNews(news)
 
     <h2 class="article-title">${ind.title}</h2>
 
-    <p class="article-description" >${ind.description || "Description not available."}</p>
+    <p class="article-description">${ind.description || "Description not available."}</p>
 
     <span class="article-author">-${ind.author?ind.author:"unknown"}</span><br>
     </a>
@@ -82,6 +82,6 @@ article.innerHTML=output;
 }
 else{
 
-    article.innerHTML=`<li class="not-found" >No article was found based on the search..</li>`
+    article.innerHTML=`<li class="not-found">No article was found based on the search.</li>`
 }
 };
