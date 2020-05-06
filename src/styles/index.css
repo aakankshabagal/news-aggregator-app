@@ -96,23 +96,31 @@ body section .newslist #news-articles .container .article .article-link .article
   height: 200px;
 }
 
-body section .newslist #news-articles .container .article .article-link .article-title {
+body section .newslist #news-articles .container .article .article-link h2 {
+  text-align: justify;
+}
+
+body section .newslist #news-articles .container .article .article-link h2 .article-title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 15px;
 }
 
-body section .newslist #news-articles .container .article .article-link .article-description {
+body section .newslist #news-articles .container .article .article-link p {
+  text-align: justify;
+}
+
+body section .newslist #news-articles .container .article .article-link p .article-description {
   font-size: 14px;
   color: #c7c1c1;
 }
 
-body section .newslist #news-articles .container .article .article-link p {
+body section .newslist #news-articles .container .article .article-link span {
   text-align: right;
 }
 
-body section .newslist #news-articles .container .article .article-link p .article-author {
+body section .newslist #news-articles .container .article .article-link span .article-author {
   color: blue;
   width: 100%;
   text-align: right;
@@ -125,7 +133,7 @@ body section .newslist #news-articles .container .article:hover {
   border: 1px solid blue;
 }
 
-body section .newslist #news-articles .no-article {
+body section .newslist #news-articles li .not-found {
   color: white;
   list-style-type: none;
 }
