@@ -66,16 +66,22 @@ body{
 
 
             .container{
-              display: flex;
+            //  display: flex;
           
-            border-radius: 5px;
+            //border-radius: 5px;
     
-              width: 23%;
-              border: 5px solid rgb(59, 59, 59); 
-              margin-bottom: 20px;
+    //          width: 23%;
+             // border: 5px solid rgb(59, 59, 59); 
+              //margin-bottom: 20px;
               
                
-              
+              li{ display: flex;
+          
+                border-radius: 5px;
+        
+                  width: 23%;
+                  border: 5px solid rgb(59, 59, 59); 
+                  margin-bottom: 20px;
 
 
               .article{
@@ -174,6 +180,7 @@ body{
                 border: 1px solid blue;
 
               }
+            }
             }
 
             li{
