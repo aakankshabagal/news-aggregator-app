@@ -1,12 +1,7 @@
 const apiKey='9485e5925b36466aaa9269821cb75b31';
 let article_area=document.getElementById("news-articles");
 
-function start(){
-    console.log("onload");//comment to onload start function
-    document.getElementById("search").addEventListener('keypress',searchvalue);
-    retrieve();
 
-}
 async function retrieve(searchValueText="")
 {
     article_area.innerHTML='<p class="newsload">News loading please wait..</p>';
@@ -81,4 +76,12 @@ else{
 
     article_area.innerHTML=`<h1  class="not-found">No article was found based on the search.</h1>`
 }
+}
+
+function start()
+{
+    console.log("onload");//comment to onload start function
+    document.getElementById("search").addEventListener('keypress',searchvalue);
+    retrieve();
+
 }
