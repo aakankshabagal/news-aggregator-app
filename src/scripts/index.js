@@ -1,7 +1,5 @@
-let article_area="";
-
-const apikey='9485e5925b36466aaa9269821cb75b31';
-let article=document.getElementById("news-articles");
+const apiKey='9485e5925b36466aaa9269821cb75b31';
+let article_area=document.getElementById("news-articles");
 
 function start(){
     console.log("onload");//comment to onload start function
@@ -9,23 +7,23 @@ function start(){
     retrieve();
 
 }
-async function retrieve(searchvalueText="")
+async function retrieve(searchValueText="")
 {
     article_area.innerHTML='<p class="newsload">News loading please wait..</p>';
     
-    if(searchvalueText!="")
+    if(searchValueText!="")
     {
-        url=`https://newsapi.org/v2/top-headlines?q=${searchvalueText}&apiKey=${apikey}`;
+        url=`https://newsapi.org/v2/everything?q=${searchValueText}&apiKey=${apiKey}`;
     }
     else{
-        url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`;
+        url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
     }
     const responce=await fetch(url);
 
     const result=await responce.json();
 
     getNews(result);
-}
+};
 
 
 //for passing value to retrive function
@@ -55,34 +53,32 @@ function getNews(news)
     if(news.totalResults>0)
     {
 
-    news.articles.forEach(ind  => {
-        
-   
+    news.articles.forEach(ind=>{
      output+=
-    `<section class="container  animated pulse delay-2s">
+    `<section class="container animated pulse delay-2s">
         <li class="article">
 
             <div class="img">
-            <img src="${ind.urlToImage}" class="article-img" alt="${ind.title}"/>
+            <img src="${ind.urlToImage}" class="article-img" alt="${ind.title}"></img>
             </div>
 
             <h2 class="article-title">${ind.title}</h2>
 
             <p class="article-description">${ind.description || "Description not available."}</p>
 
-            <span class="article-author">${ind.author?ind.author:"unknown"}</span><br>
+            <span class="article-author">${ind.author? ind.author: "unknown"}</span><br>
             <a class="article-link" href="${ind.url}">
             </a>
         </li>
     </section>`;
 });
 
-article.innerHTML=output;
+article_area.innerHTML=output;
     
 
 }
 else{
 
-    article.innerHTML=`<h1  class="not-found">No article was found based on the search.</h1>`
+    article_area.innerHTML=`<h1  class="not-found">No article was found based on the search.</h1>`
 }
 };
