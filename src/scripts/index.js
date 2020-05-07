@@ -1,4 +1,5 @@
 
+import  "styles/index.css";
 
 const apikey='9485e5925b36466aaa9269821cb75b31';
 let article=document.getElementById("news-articles");
