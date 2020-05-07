@@ -130,7 +130,7 @@ body section #news-articles .container .article:hover {
   border: 1px solid blue;
 }
 
-body section #news-articles li .not-found {
+body section #news-articles .not-found {
   color: white;
   list-style-type: none;
 }
@@ -248,7 +248,7 @@ body section #news-articles .newsload {
   body section #news-articles .container .article:hover {
     border: 1px solid blue;
   }
-  body section #news-articles li .not-found {
+  body section #news-articles .not-found {
     color: white;
     list-style-type: none;
   }
