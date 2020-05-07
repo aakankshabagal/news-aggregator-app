@@ -47,10 +47,6 @@ body{
 
 
           
-        .newslist{
-
-          font-family: 'Times New Roman', Times, serif;
-          list-style-type: none;
           
           #news-articles{
 
@@ -66,22 +62,16 @@ body{
 
 
             .container{
-            //  display: flex;
+              display: flex;
           
-            //border-radius: 5px;
+            border-radius: 5px;
     
-    //          width: 23%;
-             // border: 5px solid rgb(59, 59, 59); 
-              //margin-bottom: 20px;
+              width: 23%;
+              border: 5px solid rgb(59, 59, 59); 
+              margin-bottom: 20px;
               
                
-              li{ display: flex;
-          
-                border-radius: 5px;
-        
-                  width: 23%;
-                  border: 5px solid rgb(59, 59, 59); 
-                  margin-bottom: 20px;
+              
 
 
               .article{
@@ -101,15 +91,14 @@ body{
                 border-radius: 5px;
                
               
-              img{ 
-                width: 100%;;
+              
           
                 .article-img{
 
                   width:100%;
                   height:200px;
 
-                }
+                
               }
 
                 h2{
@@ -181,7 +170,6 @@ body{
 
               }
             }
-            }
 
             li{
             .not-found{
@@ -195,7 +183,7 @@ body{
           }
         }
 
-    }
+    
 }
 
 //end of desktop view 
@@ -258,13 +246,7 @@ body{
         
 
 
-          
-        .newslist{
-
-          font-family: 'Times New Roman', Times, serif;
-          list-style-type: none;
-          margin-right: 10%;
-
+        
 
 
           #news-articles{
@@ -310,16 +292,15 @@ body{
                 border-radius: 5px;
                
               
-            .img{
-                  width: 100%;
+      
 
                 .article-img{
 
                   width:100%;
-                  height:100px;
+                  height:200px;
 
                 }
-              }
+              
 
                 h2{
 
@@ -398,7 +379,7 @@ body{
 }
 
 
-}
+
      
 
   
