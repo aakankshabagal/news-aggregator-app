@@ -88,28 +88,15 @@ body{
               
               width: 100%;
               margin: 1px;
-              padding: 5px;
+              padding: 10px;
               
-                background: rgb(59, 59, 59);
+                background: rgb(41, 38, 38);
                 border:1px solid black;
                 border-radius: 5px;
                
               
-              .article-link{
-
-                color: white;
-                text-decoration: none;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 10px;
-                text-align: justify;
-                font-weight: normal;
-
                
-              
-
-                
-
-
+          
                 .article-img{
 
                   width:100%;
@@ -120,31 +107,35 @@ body{
                 h2{
 
                   text-align: justify;
+                  color: white;
+                  font-size: 15px;
+                  font-family:Arial, Helvetica, sans-serif;
+                  font-style: normal;
+                  font-weight: normal;
 
                 .article-title{
 
                   
-                  font-family: Arial, Helvetica, sans-serif;
+                  font-family:Arial, Helvetica, sans-serif;
                   font-weight: normal;
                   font-style: normal;
-                  font-size: 15px;
+                
                 }
                 }
               
                 p{
                   text-align: justify;
-
+                  color: rgb(199, 193, 193);
 
                 .article-description{
 
-                  font-size: 14px;
-                  color: rgb(199, 193, 193);
+                  font-size: 13px;
+                  color: rgb(172, 169, 169);
                 
                 }
               }
 
-              span{
-                text-align: right;
+              
                 .article-author{
 
                   color: blue;
@@ -154,10 +145,21 @@ body{
                   text-align: right;
                   position: relative;
                   bottom: 0px;
-                  font-size: 12px;
+                  font-size: 13px;
+                  margin-right: 0%;
                 }
-              }
+              
 
+              .article-link{
+
+                color: white;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                text-align: justify;
+                font-weight: normal;
+
+              
 
               }
 
@@ -299,20 +301,7 @@ body{
                 border-radius: 5px;
                
               
-              .article-link{
-
-                color: white;
-                text-decoration: none;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 10px;
-                text-align: justify;
-                font-weight: normal;
-
-               
-              
-
-                
-
+            
 
                 .article-img{
 
@@ -357,7 +346,16 @@ body{
                   bottom: 0px;
                   font-size: 12px;
                 }
+                .article-link{
 
+                  color: white;
+                  text-decoration: none;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 10px;
+                  text-align: justify;
+                  font-weight: normal;
+  
+                
 
               }
 

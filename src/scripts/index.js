@@ -1,5 +1,4 @@
-
-import  "styles/index.css";
+let article_area="";
 
 const apikey='9485e5925b36466aaa9269821cb75b31';
 let article=document.getElementById("news-articles");
@@ -61,7 +60,7 @@ function getNews(news)
    
      output+=
     `<section class="container  animated pulse delay-2s" >
-        <li class="article"><a class="article-link" href="${ind.url}">
+        <li class="article">
 
             <div class="img">
             <img src="${ind.urlToImage}" class="article-img" alt="${ind.title}"/>
@@ -72,6 +71,7 @@ function getNews(news)
             <p class="article-description">${ind.description || "Description not available."}</p>
 
             <span class="article-author">${ind.author?ind.author:"unknown"}</span><br>
+            <a class="article-link" href="${ind.url}">
             </a>
         </li>
     </section>`;
