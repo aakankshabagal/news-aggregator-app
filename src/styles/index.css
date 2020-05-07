@@ -54,7 +54,7 @@ body #news-articles {
           justify-content: space-between;
 }
 
-body #news-articles .container {
+body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@ body #news-articles .container {
   margin-bottom: 20px;
 }
 
-body #news-articles .container .article {
+body .container .article {
   width: 100%;
   margin: 1px;
   padding: 10px;
@@ -73,12 +73,12 @@ body #news-articles .container .article {
   border-radius: 5px;
 }
 
-body #news-articles .container .article .article-img {
+body .container .article .article-img {
   width: 100%;
   height: 200px;
 }
 
-body #news-articles .container .article h2 {
+body .container .article h2 {
   text-align: justify;
   color: white;
   font-size: 15px;
@@ -87,23 +87,23 @@ body #news-articles .container .article h2 {
   font-weight: normal;
 }
 
-body #news-articles .container .article h2 .article-title {
+body .container .article h2 .article-title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-body #news-articles .container .article p {
+body .container .article p {
   text-align: justify;
   color: #c7c1c1;
 }
 
-body #news-articles .container .article p .article-description {
+body .container .article p .article-description {
   font-size: 13px;
   color: #aca9a9;
 }
 
-body #news-articles .container .article .article-author {
+body .container .article .article-author {
   color: blue;
   width: 100%;
   text-align: right;
@@ -113,7 +113,7 @@ body #news-articles .container .article .article-author {
   margin-right: 0%;
 }
 
-body #news-articles .container .article .article-link {
+body .container .article .article-link {
   color: white;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -122,16 +122,16 @@ body #news-articles .container .article .article-link {
   font-weight: normal;
 }
 
-body #news-articles .container .article:hover {
+body .container .article:hover {
   border: 1px solid blue;
 }
 
-body #news-articles .not-found {
+body .not-found {
   color: white;
   list-style-type: none;
 }
 
-body #news-articles .newsload {
+body .newsload {
   color: white;
 }
 
@@ -188,7 +188,7 @@ body #news-articles .newsload {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body #news-articles .container {
+  body .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -197,7 +197,7 @@ body #news-articles .newsload {
     border: 5px solid #3b3b3b;
     margin-bottom: 20px;
   }
-  body #news-articles .container .article {
+  body .container .article {
     width: 100%;
     margin: 1px;
     padding: 5px;
@@ -205,24 +205,24 @@ body #news-articles .newsload {
     border: 1px solid black;
     border-radius: 5px;
   }
-  body #news-articles .container .article .article-img {
+  body .container .article .article-img {
     width: 100%;
     height: 200px;
   }
-  body #news-articles .container .article h2 {
+  body .container .article h2 {
     text-align: justify;
   }
-  body #news-articles .container .article h2 .article-title {
+  body .container .article h2 .article-title {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
   }
-  body #news-articles .container .article .article-description {
+  body .container .article .article-description {
     font-size: 14px;
     color: #c7c1c1;
   }
-  body #news-articles .container .article .article-author {
+  body .container .article .article-author {
     color: blue;
     width: 100%;
     text-align: right;
@@ -230,7 +230,7 @@ body #news-articles .newsload {
     bottom: 0px;
     font-size: 12px;
   }
-  body #news-articles .container .article .article-link {
+  body .container .article .article-link {
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -238,14 +238,14 @@ body #news-articles .newsload {
     text-align: justify;
     font-weight: normal;
   }
-  body #news-articles .container .article:hover {
+  body .container .article:hover {
     border: 1px solid blue;
   }
-  body #news-articles .not-found {
+  body .not-found {
     color: white;
     list-style-type: none;
   }
-  body #news-articles .newsload {
+  body .newsload {
     color: white;
   }
 }
