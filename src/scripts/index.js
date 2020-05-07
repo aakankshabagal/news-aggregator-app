@@ -59,7 +59,7 @@ function getNews(news)
         
    
      output+=
-    `<section class="container  animated pulse delay-2s" >
+    `<section class="container  animated pulse delay-2s">
         <li class="article">
 
             <div class="img">
