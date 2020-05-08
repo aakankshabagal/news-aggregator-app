@@ -36,7 +36,7 @@ article_area.innerHTML=output;
 }
 else{
 
-    article_area.innerHTML=`<div class="not-found">No article was found based on the search.</div>`;
+    article_area.innerHTML=`<h3 class="not-found">No article was found based on the search.</h3>`;
 }
     }//try enddd
 
