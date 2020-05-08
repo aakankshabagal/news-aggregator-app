@@ -1,4 +1,4 @@
-const apiKey='9485e5925b36466aaa9269821cb75b31';
+const apikey='9485e5925b36466aaa9269821cb75b31';
 let article_area=document.getElementById("news-articles");
 
 function getNews(news)
@@ -44,10 +44,10 @@ async function retrieve(searchValueText="")
     
     if(searchValueText!="")
     {
-        url=`https://newsapi.org/v2/everything?q=${searchValueText}&apiKey=${apiKey}`;
+        url=`https://newsapi.org/v2/everything?q=${searchValueText}&apiKey=${apikey}`;
     }
     else{
-        url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
+        url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`;
     }
     const responce = await fetch(url);
     //console.log(url);
@@ -68,11 +68,12 @@ async function searchvalue(event){
         console.log(event.which);
         console.log(event.key);
         console.log(event.keycode);
+        console.log(event.target.value);
+
         retrieve(event.target.value);
 
 
-        console.log(event.target.value);
-
+        
     }
 };
 
