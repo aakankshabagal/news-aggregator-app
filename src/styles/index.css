@@ -129,11 +129,7 @@ li:hover {
   font-weight: normal;
 }
 
-li {
-  list-style-type: none;
-}
-
-li .not-found {
+.not-found {
   color: white;
 }
 
@@ -279,11 +275,7 @@ li .not-found {
   }
 }
 
-li {
-  list-style-type: none;
-}
-
-li .not-found {
+.not-found {
   color: white;
 }
 

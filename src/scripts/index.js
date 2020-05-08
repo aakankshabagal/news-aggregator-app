@@ -4,7 +4,7 @@ let article_area=document.getElementById("news-articles");
 function getNews(news)
 {
     let output="";
-    if(news.totalResults > 0)
+    if(news.totalResults>0)
     {
 
     news.articles.forEach(ind=>{
@@ -34,7 +34,7 @@ console.log(output);
 }
 else{
 
-    article_area.innerHTML=`<li  class="not-found">No article was found based on the search.</li>`
+    article_area.innerHTML=`<div class="not-found">No article was found based on the search.</div>`
 }
 }
 
@@ -49,12 +49,12 @@ async function retrieve(searchValueText="")
     else{
         url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
     }
-    const responce= await fetch(url);
-    console.log(url);
-    const result=await responce.json();
+    const responce = await fetch(url);
+    //console.log(url);
+    const result = await responce.json();
 
     getNews(result);
-    console.log(result);
+    //console.log(result);
 };
 
 
