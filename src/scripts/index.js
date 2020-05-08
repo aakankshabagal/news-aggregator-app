@@ -33,7 +33,7 @@ article_area.innerHTML=output;
 }
 else{
 
-    article_area.innerHTML=`<h1  class="not-found">No article was found based on the search.</h1>`
+    article_area.innerHTML=`<li  class="not-found">No article was found based on the search.</li>`
 }
 }
 
