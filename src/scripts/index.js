@@ -1,11 +1,11 @@
 const apikey='9485e5925b36466aaa9269821cb75b31';
 let article_area=document.getElementById("news-articles");
-
+let output="";
 function getNews(news)
 {
-    let output="";
-    if(news.totalResults>0)
-    {
+   
+    if( news.totalResults > 0 )
+    { 
 
     news.articles.forEach(ind=>{
      output+=
@@ -24,17 +24,18 @@ function getNews(news)
             <a class="article-link" href="${ind.url}">
             </a>
         </li>
-    </section>`;
+    </section> 
+    `;
 });
 
 article_area.innerHTML=output;
-console.log(output);
+
     
 
 }
 else{
 
-    article_area.innerHTML=`<div class="not-found">No article was found based on the search.</div>`
+    article_area.innerHTML=`<div class="not-found">No article was found based on the search.</div>`;
 }
 }
 
