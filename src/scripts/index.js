@@ -1,9 +1,10 @@
-let  apikey="9485e5925b36466aaa9269821cb75b31";
+const apikey="9485e5925b36466aaa9269821cb75b31";
 let article_area=document.getElementById("news-articles");
 let output="";
 function getNews(news)
 {
-   console.log(news.totalResults);
+    try{
+   console.log(news.totalResults)
     if( news.totalResults > 0 )
     { 
 
@@ -37,10 +38,19 @@ else{
 
     article_area.innerHTML=`<div class="not-found">No article was found based on the search.</div>`;
 }
+    }//try enddd
+
+    
+catch(error){
+    alert(error);
+    console.log(error);
+    
+}
 }
 
 async function reterieve(searchValueText="")
 {
+    try{
     article_area.innerHTML='<p class="loader">News loading please wait..</p>';
     
     if(searchValueText!="")
@@ -50,12 +60,18 @@ async function reterieve(searchValueText="")
     else{
         url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`;
     }
-    let responce = await fetch(url);
+    const responce = await fetch(url);
     //console.log(url);
-    let result = await responce.json();
+    const result = await responce.json();
 
     getNews(result);
     //console.log(result);
+}
+catch(error){
+    alert(error);
+    console.log(error);
+    
+}
 };
 
 
