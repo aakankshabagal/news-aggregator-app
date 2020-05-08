@@ -281,6 +281,7 @@ li:hover {
 
 .not-found {
   color: white;
+  content: 'No article was found based on the search.';
 }
 
 .loader {
