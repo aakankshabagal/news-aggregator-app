@@ -4,12 +4,12 @@ let article_area=document.getElementById("news-articles");
 function getNews(news)
 {
     let output="";
-    if(news.totalResults>0)
+    if(news.totalResults > 0)
     {
 
     news.articles.forEach(ind=>{
      output+=
-    `<section class="container animated pulse delay-2s">
+    `<section class="container">
         <li class="article">
 
             <div class="img">
@@ -28,6 +28,7 @@ function getNews(news)
 });
 
 article_area.innerHTML=output;
+console.log(output);
     
 
 }
@@ -49,10 +50,11 @@ async function retrieve(searchValueText="")
         url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`;
     }
     const responce= await fetch(url);
-
+    console.log(url);
     const result=await responce.json();
 
     getNews(result);
+    console.log(result);
 };
 
 
