@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2F363F;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+$desktop : 425px;
+@mixin desktop {
+    @media (max-width : #{$desktop}) {
+         @content ;
+    }
+}
+
+section{
+    margin: 10px 50px;
+      
+    @include desktop(){
+        margin: 10px 5px;
+
+     }
+    .site-title{
+        text-align: center;
+        border: 2px solid white;
+        padding: 10px;
+        box-shadow: 0px 2px 2px 0px;
+        width: 30%;
+        margin: 0 auto;
+        color: white;
+        @include desktop(){
+           font-size: 16px;
+           width: 60%;
+           
+         }
+    }
+    .search-container{
+        width: 85%;
+        margin: 20px auto;
+        input{
+          width: 100%;
+          
+          height: 25px;
+          background: transparent;
+          color: white;
+          padding: 0px;
+          border-top-style: hidden;
+          border-right-style: hidden;
+          border-left-style: hidden;
+          border-bottom-style: groove;
+        }
+    }
+    
+    .article-title{
+        margin: 10px 0px;
+        
+        @include desktop(){
+                font-size: 16px;
+                margin: 5px 0px;
+            }
+        
+    }
+    .article-description{
+        margin: 10px 0px;
+       
+            @include desktop(){
+                font-size: 12px;
+                margin: 5px 0px;
+            }
+        } 
+    .article-author{
+        width: 100%;
+        color: #03DAC5;
+        text-align: right;
+        position: relative;
+        bottom: 0px;
+        @include desktop(){
+            font-size: 8px;
+            margin: 5px 0px;
+        }
+    }
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+    @include desktop(){
+        margin: 30px 0px;
+    }
+
+
+    li{
+        align-self: center;
+        justify-self: center;
+        margin: 0px 10px;
+        height: 350px;
+        width: 250px;
+        background-color: #47535E;
+        list-style-type: none;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        overflow: hidden;
+        margin-bottom: 20px;
+       
+        @include desktop(){
+           height: 250px;
+           width: 150px;
+           padding: 10px;
+           margin: 0px 5px;
+           margin-bottom: 10px;
+        }
+       
+    }
+    li:hover{
+        box-shadow:2px 3px 8px 0px; ;
+    }
+}
+.article-img{
+    width :250px ;
+    height: 150px;
+
+    @include desktop(){
+        height: 100px;
+        width: 150px;
+       
+     }
+}
+#author{
+    width: 100%;
+    text-align: right;
+    position: relative;
+    bottom: 0px;
+  
+    
+}
+
+
+.BtnContainer{
+    width: 100%;
+    margin: -35px 10px auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+.arrowContainer{
+    background-color:rgb(123, 124, 124) ;
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 3px 8px 0px;
+    margin: 0px 10px; 
+    
+    @include desktop(){
+        margin: 10px 10px; 
+
+        height: 35px;
+        width: 50px;
+       
+     }
+
+
+    .Pageprev{
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        @include desktop(){
+         
+            width: 70%;
+            padding-left: 10px;
+
+        
+    }
+}
+    .Pagenext{
+        width: 55%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0px;
+        @include desktop(){
+         
+            width: 70%;
+            padding-left: 5px;
+
+              
+    }
+      
+    }
+
+}
+}
+
+.loader{
+    margin: 200px auto;
+    text-align: center;
+    color: rgb(123, 124, 124);
+    svg{
+        height : 80px;
+        width: 80px;
+        fill: rgb(123, 124, 124) ;
+        transform-origin: 44% 50%;
+        animation: rotate 1.5s infinite linear;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.not-found{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}

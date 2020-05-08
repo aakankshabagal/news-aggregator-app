@@ -2,7 +2,7 @@ body {
   background: #0f0f0f;
 }
 
-body .main-head {
+.main-head {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   border: 1px solid white;
@@ -20,13 +20,13 @@ body .main-head {
   margin: 0 auto;
 }
 
-body .search-container {
+.search-container {
   width: 100%;
   margin: auto;
   margin-top: 15px;
 }
 
-body .search-container input {
+.search-container input {
   width: 100%;
   height: 25px;
   background: transparent;
@@ -38,7 +38,7 @@ body .search-container input {
   border-bottom-style: groove;
 }
 
-body #news-articles {
+#news-articles {
   font-family: 'Times New Roman', Times, serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +54,7 @@ body #news-articles {
           justify-content: space-between;
 }
 
-body .container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,16 @@ body .container {
   margin-bottom: 20px;
 }
 
-body .container .article {
+.container li {
+  list-style-type: none;
+}
+
+.container li:hover {
+  -webkit-box-shadow: 2px 3px 8px 0px;
+          box-shadow: 2px 3px 8px 0px;
+}
+
+.container .article {
   width: 100%;
   margin: 1px;
   padding: 10px;
@@ -73,12 +82,12 @@ body .container .article {
   border-radius: 5px;
 }
 
-body .container .article .article-img {
+.container .article .article-img {
   width: 100%;
   height: 200px;
 }
 
-body .container .article h2 {
+.container .article h2 {
   text-align: justify;
   color: white;
   font-size: 15px;
@@ -87,23 +96,23 @@ body .container .article h2 {
   font-weight: normal;
 }
 
-body .container .article h2 .article-title {
+.container .article h2 .article-title {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-body .container .article p {
+.container .article p {
   text-align: justify;
   color: #c7c1c1;
 }
 
-body .container .article p .article-description {
+.container .article p .article-description {
   font-size: 13px;
   color: #aca9a9;
 }
 
-body .container .article .article-author {
+.container .article .article-author {
   color: blue;
   width: 100%;
   text-align: right;
@@ -113,7 +122,7 @@ body .container .article .article-author {
   margin-right: 0%;
 }
 
-body .container .article .article-link {
+.container .article .article-link {
   color: white;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -122,16 +131,16 @@ body .container .article .article-link {
   font-weight: normal;
 }
 
-body .container .article:hover {
+.container .article:hover {
   border: 1px solid blue;
 }
 
-body .not-found {
+.not-found {
   color: white;
   list-style-type: none;
 }
 
-body .newsload {
+.newsload {
   color: white;
 }
 
@@ -139,7 +148,7 @@ body .newsload {
   body {
     background: #0f0f0f;
   }
-  body .main-head {
+  .main-head {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     border: 1px solid white;
@@ -157,12 +166,12 @@ body .newsload {
     margin: 0 auto;
     font-size: 15px;
   }
-  body .search-container {
+  .search-container {
     width: 100%;
     margin: auto;
     margin-top: 15px;
   }
-  body .search-container input {
+  .search-container input {
     width: 100%;
     height: 25px;
     background: transparent;
@@ -173,7 +182,7 @@ body .newsload {
     border-left-style: hidden;
     border-bottom-style: groove;
   }
-  body #news-articles {
+  #news-articles {
     font-family: 'Times New Roman', Times, serif;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -188,7 +197,7 @@ body .newsload {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body .container {
+  .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -197,7 +206,7 @@ body .newsload {
     border: 5px solid #3b3b3b;
     margin-bottom: 20px;
   }
-  body .container .article {
+  .container .article {
     width: 100%;
     margin: 1px;
     padding: 5px;
@@ -205,24 +214,24 @@ body .newsload {
     border: 1px solid black;
     border-radius: 5px;
   }
-  body .container .article .article-img {
+  .container .article .article-img {
     width: 100%;
     height: 200px;
   }
-  body .container .article h2 {
+  .container .article h2 {
     text-align: justify;
   }
-  body .container .article h2 .article-title {
+  .container .article h2 .article-title {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
   }
-  body .container .article .article-description {
+  .container .article .article-description {
     font-size: 14px;
     color: #c7c1c1;
   }
-  body .container .article .article-author {
+  .container .article .article-author {
     color: blue;
     width: 100%;
     text-align: right;
@@ -230,7 +239,7 @@ body .newsload {
     bottom: 0px;
     font-size: 12px;
   }
-  body .container .article .article-link {
+  .container .article .article-link {
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -238,14 +247,14 @@ body .newsload {
     text-align: justify;
     font-weight: normal;
   }
-  body .container .article:hover {
+  .container .article:hover {
     border: 1px solid blue;
   }
-  body .not-found {
+  .not-found {
     color: white;
     list-style-type: none;
   }
-  body .newsload {
+  .newsload {
     color: white;
   }
 }

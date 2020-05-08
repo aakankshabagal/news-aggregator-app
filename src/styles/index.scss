@@ -3,6 +3,7 @@
 body{
 
   background: rgb(15, 15, 15);
+}
 
 
         .main-head{
@@ -68,6 +69,18 @@ body{
               border: 5px solid rgb(59, 59, 59); 
               margin-bottom: 20px;
               
+              li{
+                
+               
+                list-style-type: none;
+               
+                
+               
+            }
+            li:hover{
+                box-shadow:2px 3px 8px 0px; 
+            }
+        
                
               
 
@@ -178,7 +191,7 @@ body{
             .newsload{
               color: white;
             }
-          }
+          
         
 
     
@@ -194,7 +207,7 @@ body{
 body{
 
     background: rgb(15, 15, 15);
-    
+}
     
 
         .main-head{
@@ -370,7 +383,7 @@ body{
             .newsload{
               color: white;
             }
-          }
+          
         }
 
     
