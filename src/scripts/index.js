@@ -39,7 +39,7 @@ else{
 
 async function retrieve(searchValueText="")
 {
-    article_area.innerHTML='<p class="newsload">News loading please wait..</p>';
+    article_area.innerHTML='<p class="loader">News loading please wait..</p>';
     
     if(searchValueText!="")
     {

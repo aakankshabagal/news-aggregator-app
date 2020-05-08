@@ -137,8 +137,40 @@ li .not-found {
   color: white;
 }
 
-.newsload {
+.loader {
   color: white;
+}
+
+.loader svg {
+  height: 80px;
+  width: 80px;
+  fill: #7b7c7c;
+  -webkit-transform-origin: 44% 50%;
+          transform-origin: 44% 50%;
+  -webkit-animation: rotate 1.5s infinite linear;
+          animation: rotate 1.5s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -255,8 +287,29 @@ li .not-found {
   color: white;
 }
 
-.newsload {
+.loader {
   color: white;
+}
+
+.loader svg {
+  height: 80px;
+  width: 80px;
+  fill: #7b7c7c;
+  -webkit-transform-origin: 44% 50%;
+          transform-origin: 44% 50%;
+  -webkit-animation: rotate 1.5s infinite linear;
+          animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes unfoldIn {
