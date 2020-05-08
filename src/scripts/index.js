@@ -1,15 +1,15 @@
-const apikey='9485e5925b36466aaa9269821cb75b31';
+let  apikey="9485e5925b36466aaa9269821cb75b31";
 let article_area=document.getElementById("news-articles");
 let output="";
 function getNews(news)
 {
-   
+   console.log(news.totalResults);
     if( news.totalResults > 0 )
     { 
 
     news.articles.forEach(ind=>{
      output+=
-    `<section class="container">
+    ` <section class="container">
         <li class="article">
 
             <div class="img">
@@ -18,7 +18,7 @@ function getNews(news)
 
             <h2 class="article-title">${ind.title}</h2>
 
-            <p class="article-description">${ind.description || "Description not available."}</p>
+            <p class="article-description">${ind.description || "Description not available."}</p><br>
 
             <span class="article-author">${ind.author? ind.author: "unknown"}</span><br>
             <a class="article-link" href="${ind.url}">
@@ -39,7 +39,7 @@ else{
 }
 }
 
-async function retrieve(searchValueText="")
+async function reterieve(searchValueText="")
 {
     article_area.innerHTML='<p class="loader">News loading please wait..</p>';
     
@@ -50,9 +50,9 @@ async function retrieve(searchValueText="")
     else{
         url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`;
     }
-    const responce = await fetch(url);
+    let responce = await fetch(url);
     //console.log(url);
-    const result = await responce.json();
+    let result = await responce.json();
 
     getNews(result);
     //console.log(result);
@@ -71,7 +71,7 @@ async function searchvalue(event){
         console.log(event.keycode);
         console.log(event.target.value);
 
-        retrieve(event.target.value);
+        reterieve(event.target.value);
 
 
         
@@ -84,8 +84,8 @@ async function searchvalue(event){
 
 function start()
 {
-    console.log("onload");//comment to onload start function
+    console.log("onload")//comment to onload start function
     document.getElementById("search").addEventListener('keypress',searchvalue);
-    retrieve();
+    reterieve();
 
 }
