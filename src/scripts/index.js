@@ -12,7 +12,7 @@ function getNews(news)
     ` <section class="container">
         <li class="article">
 
-            <div class="img">
+            <div>
             <img src="${ind.urlToImage}" class="article-img" alt="${ind.title}"></img>
             </div>
 
