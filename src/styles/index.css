@@ -38,8 +38,11 @@ body {
   border-bottom-style: groove;
 }
 
-#news-articles {
+ul {
+  list-style-type: none;
+}
 
+#news-articles {
   font-family: 'Times New Roman', Times, serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,6 +207,9 @@ li:hover {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
+  }
+  ul {
+    list-style-type: none;
   }
   #news-articles {
     font-family: 'Times New Roman', Times, serif;
