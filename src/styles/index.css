@@ -38,6 +38,16 @@ body {
   border-bottom-style: groove;
 }
 
+.search-bar {
+  margin-top: 4%;
+  margin-left: 5%;
+  margin-bottom: 70px;
+}
+
+#search {
+  width: 92%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -134,11 +144,11 @@ li:hover {
   color: white;
 }
 
-.loader {
+.load {
   color: white;
 }
 
-.loader svg {
+.load svg {
   height: 80px;
   width: 80px;
   fill: #7b7c7c;
@@ -207,6 +217,14 @@ li:hover {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
+  }
+  .search-bar {
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-bottom: 70px;
+  }
+  #search {
+    width: 92%;
   }
   ul {
     list-style-type: none;
@@ -283,11 +301,11 @@ li:hover {
   color: white;
 }
 
-.loader {
+.load {
   color: white;
 }
 
-.loader svg {
+.load svg {
   height: 80px;
   width: 80px;
   fill: #7b7c7c;

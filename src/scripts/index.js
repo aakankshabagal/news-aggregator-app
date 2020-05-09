@@ -1,5 +1,5 @@
 const apikey="9485e5925b36466aaa9269821cb75b31";
-let article_area=document.getElementById("news-articles");
+const article_area=document.getElementById("news-articles");
 let output="";
 function getNews(news)
 {
@@ -22,7 +22,7 @@ function getNews(news)
             <p class="article-description">${ind.description || "Description not available."}</p><br>
 
             <span class="article-author">${ind.author? ind.author: "unknown"}</span><br>
-            <a class="article-link" href="${ind.url}">
+            <a class="article-link" href="${ind.url}" target="_blank">
             </a>
         </li>
     </section> 
@@ -51,7 +51,7 @@ catch(error){
 async function reterieve(searchValueText="")
 {
     try{
-    article_area.innerHTML='<p class="loader">News loading please wait..</p>';
+    article_area.innerHTML='<p class="load">News are  loading...</p>';
     
     if(searchValueText!="")
     {
@@ -105,3 +105,7 @@ function start()
     reterieve();
 
 }
+
+(function(){
+    start();
+  })();

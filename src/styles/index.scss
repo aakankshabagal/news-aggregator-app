@@ -41,6 +41,21 @@ body{
               border-bottom-style: groove;
             }
           }
+
+
+
+          .search-bar {
+            margin-top: 4%;
+            margin-left: 5%;
+            margin-bottom: 70px;
+
+          }
+          
+          #search {
+            width: 92%;
+            
+          }
+        
           ul{
 
             list-style-type: none;
@@ -188,7 +203,7 @@ body{
             
           }
           
-            .loader{
+            .load{
               color: white;
               svg{
                 height : 80px;
@@ -262,7 +277,16 @@ body{
                 border-bottom-style: groove;
           }
         }
-
+        .search-bar {
+          margin-top: 4%;
+          margin-left: 5%;
+          margin-bottom: 70px;
+        }
+        
+        #search {
+          width: 92%;
+         }
+      
 
         //list of news
 
@@ -403,7 +427,7 @@ body{
               
             }
             
-            .loader{
+            .load{
               color: white;
               svg{
                 height : 80px;
